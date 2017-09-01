@@ -7,3 +7,7 @@ E)
   - Open Movie DB
   - Weather api: Darkskynet has a great api and their plans are free for small scale applications.
   - StockPicker: Quandl is great for beginners who want to use financial information.
+
+______
+our lesson is still tiny, but have you considered axios?  https://github.com/jankeLearning/content-md/blob/master/npm-modules/04-axios.md
+	-evan
