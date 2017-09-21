@@ -172,7 +172,7 @@ var object_1 = {
 }; 
 
 var object_2 = {
-    name: 'two
+    name: 'two'
 };
 
 var same_function_new_context = object_1.get_name.bind(object_2);
