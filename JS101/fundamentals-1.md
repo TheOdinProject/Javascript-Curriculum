@@ -118,6 +118,40 @@ The very first steps of learning any programming language are destined to be a l
     * `arr[2]  // true`
 </details>
 
+<details>
+  <summary>
+    How do you define an object? (there are a few ways, but I will show you how I do it)
+  </summary>
+
+  `var customObject = {
+    a: 'one',
+    b: 'two',
+    c: 'three
+  };`
+  
+  There are also two more ways I use (the second one I will show you is tricky because the syntax is similar to an array)
+  
+  `var x = {};`
+  `x.a = 'one'`
+  `x['b'] = 'two'`
+  `x.c = 'three'`
+  
+  x would end up the exact same as customObject in the above example
+</details>
+
+
+<details>
+  <summary>
+    How do you get the keys that are in an object?
+  </summary>
+
+  You can use `Object.keys` to do the heavy lifting for you:
+   `var x = {a: 'one', b: 'two', c: 'three'};`
+   `var keysArray = Object.keys(x);`
+   `console.log(keysArray)`
+</details>
+
+
 ### Step One
 
 1. [This tutorial](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash) throws you into the deep end 🔥. The point of it is to give you a good feel for what you're going to be able do to with your Javascript skills, and how to think about breaking down a problem.  You'll also get a good idea for what your code is going to end up looking like. You will not, however really learn a lot here because most of it will be over your head at this point.  Don't sweat it.  It's _just fine_ if you don't really understand what you're doing just yet.  You'll get there.
