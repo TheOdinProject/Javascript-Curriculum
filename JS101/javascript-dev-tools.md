@@ -17,7 +17,7 @@ There are three ways to open the Developer Tools menu:
 2. Read over the [Chrome DevTools Documentation](https://developer.chrome.com/devtools) by Google. Pay particular attention to sections "Accessing the DevTools" through "Debugging Javascript" since this is what you'll use the Developer Tools for 95% of the time.
 3. Finally, watch [this video](https://www.youtube.com/watch?v=JzZFccCEgGA) by The Net Ninja for more detail on using the JavaScript Console.
 
-These resoures should give you a pretty good starting point for understading how to use DevTools.  The more you use and understand the abilities of Dev Tools the easier your life as a developer becomes.
+These resources should give you a pretty good starting point for understanding how to use DevTools.  The more you use and understand the abilities of Dev Tools the easier your life as a developer becomes.
 
 ## Additional Resources
 
