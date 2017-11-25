@@ -1,4 +1,8 @@
-As you learn to write JavaScript you are going to have many opportunities to code-along with various tutorials, complete exercises, and practice what you've learned by writing your own code.  Because JavaScript is such a dynamic language there are _many_ ways to run the code you write.  All of them have their advantages and disadvantages and which one you use will depend mostly on what you're trying to accomplish.  For example, if you're working on a project for your portfolio it is important that you create it from scratch on your own computer, however if you're just playing around with a new method you've learned then it might be wise to use the quicker and easier method of loading up a website that does the set-up work for you.  If you're completely new to coding then this lesson might not mean too much to you just yet, so read it and keep it in the back of your mind.  Feel free to come back when it's time to start writing code!
+As you learn to write JavaScript you are going to have many opportunities to code-along with various tutorials, complete exercises, and practice what you've learned by writing your own code.  
+
+Because JavaScript is such a dynamic language there are _many_ ways to run the code you write.  All of them have their advantages and disadvantages and which one you use will depend mostly on what you're trying to accomplish.  For example, if you're working on a project for your portfolio it is important that you create it from scratch on your own computer, however if you're just playing around with a new method you've learned then it might be wise to use the quicker and easier method of loading up a website that does the set-up work for you.  
+
+If you're completely new to coding then this lesson might not mean too much to you just yet, so read it and keep it in the back of your mind.  Feel free to come back when it's time to start writing code!
 
 ## On a website
 
@@ -21,6 +25,46 @@ Once the console is open, writing code is as easy as typing it in.  To get multi
 **Try this now:** Open the console \(you can do it right on this page\) and type `var a = 10` then press Enter.  Now type `a` and press Enter again, the console _should_ display `10`.  Next type `a + 5` and press Enter.... the console should now display `15`.
 
 In many cases, if you just want to quickly try something out, using the browser console is incredibly quick and easy.
+
+__Word of Caution__:  
+* Running your functions in the browser can make it easy to confuse 'console.log's and return statements.  Try running these snippets separately, notice how the console behaved differently for each:
+  ```js
+    // function declarations
+    function returner() {
+        return "returned from returner";
+    };
+    function logger() {
+        console.log("logged from logger");
+    };
+    function together() {
+        console.log("logged from together");
+        return "returned from together"
+    };
+    
+    // snippet 1
+    returner();
+    logger();
+    
+    // snippet 2
+    logger();
+    returner();
+    
+    // snippet 3
+    both();
+    returner();
+    
+    // snippet 4
+    returner();
+    both();
+    
+    // snippet 5
+    var returned = returner();
+    var logged = logger();
+    console.log('--------------')
+    console.log(returned);
+    console.log(logged);
+  ```
+* The browser is a great tool for testing small bits of code, just be sure to use it mindfully!
 
 ## From HTML
 
