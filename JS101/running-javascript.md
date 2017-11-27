@@ -26,46 +26,6 @@ Once the console is open, writing code is as easy as typing it in.  To get multi
 
 In many cases, if you just want to quickly try something out, using the browser console is incredibly quick and easy.
 
-__Word of Caution__:  
-* Running your functions in the browser can make it easy to confuse 'console.log's and return statements.  Try running these snippets separately, notice how the console behaved differently for each:
-  ```js
-    // function declarations
-    function returner() {
-        return "returned from returner";
-    };
-    function logger() {
-        console.log("logged from logger");
-    };
-    function together() {
-        console.log("logged from together");
-        return "returned from together"
-    };
-    
-    // snippet 1
-    returner();
-    logger();
-    
-    // snippet 2
-    logger();
-    returner();
-    
-    // snippet 3
-    both();
-    returner();
-    
-    // snippet 4
-    returner();
-    both();
-    
-    // snippet 5
-    var returned = returner();
-    var logged = logger();
-    console.log('--------------')
-    console.log(returned);
-    console.log(logged);
-  ```
-* The browser is a great tool for testing small bits of code, just be sure to use it mindfully!
-
 ## From HTML
 
 You can run JavaScript code that you write in a script on your own computer by embedding it into an html file.  Creating a barebones HTML file is incredibly quick and easy and you can write your JavaScript directly in an html file like so:
