@@ -1,4 +1,8 @@
-As you learn to write JavaScript you are going to have many opportunities to code-along with various tutorials, complete exercises, and practice what you've learned by writing your own code.  Because JavaScript is such a dynamic language there are _many_ ways to run the code you write.  All of them have their advantages and disadvantages and which one you use will depend mostly on what you're trying to accomplish.  For example, if you're working on a project for your portfolio it is important that you create it from scratch on your own computer, however if you're just playing around with a new method you've learned then it might be wise to use the quicker and easier method of loading up a website that does the set-up work for you.  If you're completely new to coding then this lesson might not mean too much to you just yet, so read it and keep it in the back of your mind.  Feel free to come back when it's time to start writing code!
+As you learn to write JavaScript you are going to have many opportunities to code-along with various tutorials, complete exercises, and practice what you've learned by writing your own code.  
+
+Because JavaScript is such a dynamic language there are _many_ ways to run the code you write.  All of them have their advantages and disadvantages and which one you use will depend mostly on what you're trying to accomplish.  For example, if you're working on a project for your portfolio it is important that you create it from scratch on your own computer, however if you're just playing around with a new method you've learned then it might be wise to use the quicker and easier method of loading up a website that does the set-up work for you.  
+
+If you're completely new to coding then this lesson might not mean too much to you just yet, so read it and keep it in the back of your mind.  Feel free to come back when it's time to start writing code!
 
 ## On a website
 

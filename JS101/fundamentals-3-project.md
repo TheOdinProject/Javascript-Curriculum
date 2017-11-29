@@ -21,6 +21,6 @@ You really can't spend too much time reviewing and practicing the fundamentals t
 * [Exercism](http://exercism.io/) - an Odin favorite.  Uses a neat command-line interface to download and submit exercises and allows you to give and get feedback on your solutions.
 * [CodeWars](https://www.codewars.com/) - A neat gamified system with leveled exercises.  As you complete more exercises you level up and access more difficult ones.
 * [HackerRank](https://www.hackerrank.com/) - Similar in setup to CodeWars, but this site is more focused on interview question type tasks.  Some companies even use this site to interview candidates.
-
+* [Ms Murphey](http://rmurphey.com/blog/2016/02/13/exercises-for-js-beginners) - great stuff
 
 
