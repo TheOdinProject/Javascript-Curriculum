@@ -1,3 +1,5 @@
+__PULLED FROM MINDOVERMILES__
+
 ### Introduction
 
 One of the most unique and useful abilities of JavaScript is it's ability to manipulate the DOM. But what _is_ the DOM, and how do we go about changing it? Let's jump right in...
@@ -5,34 +7,40 @@ One of the most unique and useful abilities of JavaScript is it's ability to man
 ### Learning Outcomes
 <details>
   <summary>What is DOM in relation to a webpage?</summary>
-
-  * The Document Object Model is a tree-like representation of the contents on a webpage or document.
-
+  <ul>
+    <ul>
+      <li>The Document Object Model is a tree-like representation of the contents on a webpage or document.</li>
+    </ul>
+  </ul>
 </details>
 
 <details>
 <summary>What's the difference between a "node" and an "element"?</summary>
-
-  * A "node" is any object in the DOM hierarchy while an "element" is _one specific_ node.
-  
-  * "Nodes" can include elements, text content inside an element, code comment blocks not visible to the user, the document itself and even abstract types like "fragments".
-
+  <ul>
+    <ul>
+      <li>A "node" is any object in the DOM hierarchy while an "element" is <b>one specific</b> node.</li>
+      <li>"Nodes" can include elements, text content inside an element, code comment blocks not visible to the user, the document itself and even abstract types like "fragments".</li>
+    </ul>
+  </ul>
 </details>
-
 <details>
-  <summary>How do you target nodes with "selectors"?</summary>
-
-  * There are several ways, with CSS style-selectors, to target a node.
-    * `<div class="display"></div>` can be selected as follows:
-      * div
-      * div.display
-      * .display
-    * There are also relational selectors such as `firstChild` or `lastSibling`.
-  * Combined with "Query Selectors", this is how you can target a node using JavaScript
-    * i.e. `document.querySelector(".display");` would select the div above.
-
-      ​
-      </details>
+<summary>How do you target nodes with "selectors"?</summary>
+  <ul>
+    <ul>
+      <li>There are several ways, with CSS style-selectors, to target a node.</li>
+      <li><code>&lt;div class="display"&gt;&lt;/div&gt;</code> can be selected as follows:
+        <ul>
+          <li><code>div</code></li>
+          <li><code>div.display</code></li>
+          <li><code>.display</code></li>
+        </ul>
+      </li>
+      <li>There are also relational selectors such as <code>firstChild</code> or <code>lastSibling</code>.</li>
+      <li>Combined with "Query Selectors", this is how you can target a node using JavaScript</li>
+      <ul>i.e. <code>document.querySelector(".display");</code> would select the div above.</ul>
+    </ul>
+  </ul>
+</details>
 
 <details>
   <summary>What are the basic methods for finding/adding/removing and altering DOM nodes?</summary>
@@ -45,8 +53,8 @@ One of the most unique and useful abilities of JavaScript is it's ability to man
   * To remove this element, _parentNode_.removeChild\(_child_\) =&gt; removes _child_ from _parentNode_ on the DOM and returns reference to _child_.
     * i.e. `parentNode.removeChild(div);`
   * Once you have a reference to an element, as above, you can alter it in many ways.
-    * `div.style.color = 'blue';` adds the indicated style rule
-    * `div.setAttribute('id', 'theDiv');` sets the id attribute of our div to 'theDiv'.
+    * ``div.style.color = 'blue';`` adds the indicated style rule
+    * ``div.setAttribute('id', 'theDiv');`` sets the id attribute of our div to 'theDiv'.
 
 </details>
 
@@ -101,6 +109,9 @@ One of the most unique and useful abilities of JavaScript is it's ability to man
 
   *  Bubbling is a form of "event propegation". It is an efficient method for firing an event on multiple elements -- starting from the innermost element -- and "bubbling" up to outer elements.
 
+</details>
+<details>
+<summary>One last bullet without and answer</summary>
 </details>
 
 ### DOM - Document Object Model
