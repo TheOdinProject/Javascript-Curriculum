@@ -48,11 +48,11 @@ One of the most unique and useful abilities of JavaScript is it's ability to man
     <ul>
       <li>i.e. <code>const div = document.createElement('div');</code> will create a div element. However, this div has not been added to the webpage yet.</li>
     </ul>
-    <li>To append this element, use <code><i>parentNode</i>.appendChild(<i>childNode<i>)</code></li>
+    <li>To append this element, use <code><i>parentNode</i>.appendChild(<i>childNode</i>)</code></li>
     <ul>
       <li>i.e. <code>parentNode.appendChild(div);</code></li>
     </ul>
-    <li>To remove this element, <i>parentNode</i>.removeChild(<i>child</i>) 
+    <li>To remove this element, <i>parentNode</i>.removeChild(<i>child</i>)</li>
     <li>This will remove <i>child</i> from <i>parentNode</i> on the DOM and returns reference to <i>child</i>.</li>
     <ul>
       <li>i.e. <code>parentNode.removeChild(div);</code></li>
@@ -80,35 +80,27 @@ One of the most unique and useful abilities of JavaScript is it's ability to man
     <li>The three primary ways to use events are:</li>
     <ol>
       <li>By attaching scripts to event attributes on elements in the HTML document.</li>
-      <ul><li><code>&tl;button onclick="alert(this.tagName)"&gt;Click Me&tl;/button&gt;</code></li></ol>
+      <ul><li><code>&lt;button onclick="alert(this.tagName)"&gt;Click Me&lt;/button&gt;</code></li></ul>
       <li>By setting the "on_event_" property on the DOM object in your JavaScript.</li>
-      <ul><li><code>
-        ~~~JavaScript
-        // the html file
-        <button id="btn">Click Me</button>
-        ~~~
-
-        ~~~JavaScript
-        // the JavaScript file
-        var btn = document.querySelector('#btn');
-        btn.onclick = (e) => alert(e.target.tagName);
-        ~~~
-      </code></li></ul>
+      <ul><code>
+        // the html file<br />
+        &lt;button id="btn"&gt;Click Me&lt;/button&gt;<br />
+        <br />
+        // the JavaScript file<br />
+        var btn = document.querySelector(&lsquo;&#35;btn&rsquo;);<br />
+        btn.onclick = (e) =&gt; alert(e.target.tagName);<br />
+      </code></ul>
       <li>By attaching event listeners to the nodes in your JavaScript.</li>
-      </code></li></ul>
-        ​~~~JavaScript
-        // the html file
-        <button id="btn">Click Me Too</button>
-        ​~~~
-
-        ​~~~JavaScript
-        // the JavaScript file
-        var btn = document.querySelector('#btn');
-        btn.addEventListener('click', (e) => {
-          alert(e.target.tagName);
-        });
-        ​~~~
-      <ul><li><code>
+      <ul><code>
+        // the html file<br />
+        &lt;button id="btn"&gt;Click Me Too&lt;/button&gt;<br />
+        <br />
+        // the JavaScript file<br />
+        var btn = document.querySelector('#btn');<br />
+        btn.addEventListener(&lsquo;click&rsquo;, (e) => {<br />
+          &nbsp;&nbsp;alert(e.target.tagName);<br />
+        });<br />
+      </code></ul>
     </ol>
   </ul></ul>
 </details>
