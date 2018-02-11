@@ -36,6 +36,66 @@ We're going to make a simple implementation of grade-school classic "rock paper 
 Submit a solution with a pull request to this [file](https://github.com/TheOdinProject/javascript_curriculum/blob/master/JS101/fundamentals/rock-paper-scissors-project.md) on the Javascript Curriculum github repository. See the section on [Contributing](http://github.com/TheOdinProject/curriculum/blob/master/contributing.md) for how.
 
 - Add your solution below this line!
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+var playerScore = 0;
+var computerScore = 0;
+
+function game() {
+while (playerScore < 5 && computerScore < 5){
+  eachRound()
+
+
+  function eachRound(playerSelection, computerSelection){
+    var playerSelection = prompt("paper, rock, scissor ?").toLowerCase();
+    function computerPlay(){
+          var choice = ["rock", "paper", "scissor"]
+          var rand = choice[Math.floor(Math.random() * choice.length)];
+
+        return rand;
+        }
+      var computerSelection = computerPlay();
+
+      if (playerSelection == computerSelection){
+        console.log("Its a draw, Both players chose " + computerSelection)
+
+    } else if (playerSelection == "rock" & computerSelection == "paper") {
+      console.log("you lose " + computerSelection + " beats " + playerSelection )
+      return computerScore++
+    } else if (playerSelection == "scissor" & computerSelection == "rock") {
+      console.log("you lose " + computerSelection + " beats " + playerSelection )
+      return computerScore++
+    } else if (playerSelection == "paper" & computerSelection == "scissor") {
+      console.log("you lose " + computerSelection + " beats " + playerSelection )
+      return computerScore++
+    } else {
+      console.log("You Win! " + playerSelection + " beats " + computerSelection)
+      return playerScore++
+    }
+
+  }
+  console.log("Current Score: You " + playerScore + " Computer " + computerScore);
+}
+if (playerScore == 5){
+  console.log("Congratulations You Win");
+} else {
+  console.log("Sorry :( You Lose");
+}
+
+
+}
+  </script>
+  <body>
+
+  </body>
+</html>
+
 - [Edmond Alosa's solution](https://github.com/eddalosa/rockPaperScissor) - [View in browser](https://eddalosa.github.io/rockPaperScissor/)
 - [Alexander John's solution](https://github.com/alexander-john/rock-paper-scissors)
 - [Paul-EN's solution](https://github.com/Paul-EN/rock-paper-scissors/blob/master/index.html) - [View in browser](https://paul-en.github.io/rock-paper-scissors/)
