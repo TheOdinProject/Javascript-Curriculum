@@ -62,12 +62,39 @@ myData.then(function(data){ // .then() tells it to wait until the promise is res
 
 Of course there many more occasions where one would want to use Promises beyond fetching data, so learning these things now will be very useful to you.
 
+### Async and Await
+Asynchronous code can become difficult to follow when it has a lot of things going on. Async and Await are two keywords that can help make asynchronous code read more like synchronous code. This can help code look cleaner while keeping the benefits of asynchronous code.
+
+for example, the two code blocks below do the exact same thing, they both get information from a server, process it, and return a promise.
+
+~~~javascript
+function getPersonsInfo(name) {
+  return server.getPeople().then(people => {
+      return people.find(person => { return person.name === name });
+    });
+}
+~~~
+~~~javascript
+async function getPersonsInfo(name) {
+  const people = await server.getPeople();
+  const person = people.find(person => { return person.name === name });
+  return person;
+}
+~~~
+
+The second example looks much more like the kind of functions you are used to writing, however,
+notice the `async` keyword before the function deceleration? This is to let the javascript engine know to treat this as an asynchronous function.
+Also notice the `await` keyword before `server.getPeople()`, this tells the function to pause execution until the asynchronous process is completed. An important thing to remember is `async` functions are just syntactical sugar for `promises`, so returning from an `async` function is the same as returning a resolving promise, and throwing an error will reject the promise. Another neat feature of using `async/await` is having the ability to use try/catch blocks inside the function in the same way you would inside a normal function.
+
 ### Assignment
 
 <div class="lesson-content__panel" markdown="1">
 1. Read [this article](https://davidwalsh.name/promises). It's a good starting place and it's short and to the point.
 2. Watch [this video](https://www.youtube.com/watch?v=2d7s3spWAzo).  It's a good place to get a feel for how one might actually use promises in the wild. Feel free to watch the other videos in the series, but they aren't strictly needed at this point.  The video also mentions the ES5/ES6 issue, don't worry about that at this point either.  All major browsers support Promises and we will teach you how to support older browsers in a later lesson.
 3. [This chapter from `You Don't Know JS`](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md) goes __deep__ into the how and why of promises.  It's not the easiest read, but you'll be a promise professional if you take the time to properly digest it.  It's worth the effort.  The author also spends time talking about _callbacks_, which was the primary way of handling this stuff before Promises.  Callbacks are still used in some cases, but for this usage they are inadequate.  If you want the context for what he's discussing, read the [previous chapter](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch2.md) in his book.
+4. Read [this article](https://javascript.info/async-await) for a solid introduction to async/await. [this article](https://codeburst.io/javascript-es-2017-learn-async-await-by-example-48acc58bad65) also has some good examples of it's use.
+5. Read [this article](https://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html) for a more in-depth look at async/await, including how to handle errors.
+6. Watch [this video](https://www.youtube.com/watch?v=9YkUCxvaLEk) for a good overview on async/await and it's purpose, along with a special trick.
 </div>
 
 ### Additional Resources
@@ -75,3 +102,4 @@ Of course there many more occasions where one would want to use Promises beyond 
 2. The [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for Promises.  It might not be the best resource for _learning_ all about them, but once you've read a more friendly article or tutorial, this will probably be the place you return to for a refresher.
 3. [This video](https://www.youtube.com/watch?v=vQ3MoXnKfuQ) and [this one too](https://www.youtube.com/watch?v=yswb4SkDoj0) are both nice introductions to Promises if you need more repetition.
 4. [This tutorial](https://scotch.io/tutorials/javascript-promises-for-dummies) is another good introduction.
+5. [This video](https://www.youtube.com/watch?v=COKdtOgopWQ) is an example of how you can change callbacks, to promises, to async/await
