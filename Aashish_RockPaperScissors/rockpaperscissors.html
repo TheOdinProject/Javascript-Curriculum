@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Rock Paper Sciccors Game</title>
+</head>
+
+<body>
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+
+//Function to get computer selection
+        function computerPlay() {
+            var items = ["rock", "paper", "scissors"];
+            return items[Math.floor(Math.random() * items.length)];
+        }
+
+//Function to play one round of the game
+        function playRound(playerSelection, computerSelection) {
+            if (playerSelection == "rock") {
+                if (computerSelection == "scissors") {
+                    console.log("You Win!, Rock beats Scissors");
+                    return playerScore = playerScore + 1;
+                }
+                else if (computerSelection == "paper") {
+                    console.log("You Lose!, Paper beats Rock");
+                    return computerScore = computerScore + 1;
+                }
+                else if (computerSelection == "rock") {
+                    console.log("It's a tie!");
+                }
+            }
+            else if (playerSelection == "paper") {
+                if (computerSelection == "rock") {
+                    console.log("You Win!, Paper beats Rock");
+                    return playerScore = playerScore + 1;
+                }
+                else if (computerSelection == "scissors") {
+                    console.log("You Lose!, Scissors beats Paper");
+                    return computerScore = computerScore + 1;
+                }
+                else if (computerSelection == "paper") {
+                    console.log("It's a tie!");
+                }
+            }
+            else if (playerSelection == "scissors") {
+                if (computerSelection == "paper") {
+                    console.log("You Win!, Scissors beats Paper");
+                    return playerScore = playerScore + 1;
+                }
+                else if (computerSelection == "rock") {
+                    console.log("You Lose!, Rock beats Scissors");
+                    return computerScore = computerScore + 1;
+                }
+                else if (computerSelection == "scissors") {
+                    console.log("It's a tie!");
+                }
+            }
+            else{
+                console.log("Please enter a valid option - Rock, Paper, or Scissors");
+                return;
+            }
+        }
+
+//Function to run 5 rounds of play
+        function game() {
+            for (var i = 0; i < 5; i++) {
+                let playerSelection = prompt("Enter your choice");
+                playerSelection = playerSelection.toLowerCase();
+                let computerSelection = computerPlay();
+                playRound(playerSelection, computerSelection);
+            }
+            if (playerScore > computerScore) {
+                console.log("Game Results - You win!");
+            }
+            else if (computerScore > playerScore) {
+                console.log("Game Results - Computer wins!");
+            }
+            else {
+                console.log("Game Results - It's a draw, Your Score: " + playerScore + ", Computer Score: " + computerScore);
+            }
+        }
+
+//Calling game() function
+        game();
+            
+    </script>
+</body>
+
+</html>
